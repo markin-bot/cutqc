@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cutqc"
+version = "0.1.0"
+description = "成片质检：闪帧 / 声音切点 / 字幕对齐，出可点时间码跳转的网页报告"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "markin"}]
+dependencies = [
+  "numpy",
+  "pillow",
+  "imageio-ffmpeg",
+  "faster-whisper",
+  "opencc-python-reimplemented",
+  "pypinyin",
+]
+
+[project.scripts]
+cutqc = "cutqc.cli:main"
+
+[tool.setuptools]
+packages = ["cutqc"]

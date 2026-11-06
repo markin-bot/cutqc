@@ -1,0 +1,23 @@
+# 环境
+.venv/
+__pycache__/
+*.egg-info/
+build/
+dist/
+
+# 本机配置（写的是你电脑上的素材路径）
+tests/*.local.json
+
+# 测试结果、报告（里面有从片子里截的帧图，别上传）
+tests/results/
+*_质检/
+test_out*/
+
+# 媒体文件一律不进仓库
+*.mp4
+*.mov
+*.mkv
+*.m4a
+*.wav
+*.srt
+*.ass
