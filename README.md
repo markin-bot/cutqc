@@ -13,7 +13,7 @@
 需要先装 [uv](https://docs.astral.sh/uv/)（Python 工具管理器，Mac / Windows / Linux 都有）。然后一条命令装好，之后在任何文件夹都能直接用 `cutqc`：
 
 ```bash
-uv tool install git+https://github.com/<你的用户名>/cutqc
+uv tool install git+https://github.com/markin-bot/cutqc
 ```
 
 - 更新到最新版：`uv tool upgrade cutqc`
@@ -25,7 +25,7 @@ uv tool install git+https://github.com/<你的用户名>/cutqc
 开发 / 跑压力测试时，在仓库目录里用本地环境：
 
 ```bash
-git clone https://github.com/<你的用户名>/cutqc && cd cutqc
+git clone https://github.com/markin-bot/cutqc && cd cutqc
 uv venv && uv pip install -e .
 .venv/bin/cutqc --help
 ```
